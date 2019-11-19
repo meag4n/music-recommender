@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Bootstrap 4 Starter with Row and Columns</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<body>
+
+  <div class="container">
+      <div class="row">
+      <div class="col-md-8">
+        <h1 class="pt-3 pb-2">Music Recommender</h1>
+        <p>Can't find a new song to fit your mood? This quiz will recommend you a different song for each music option you pick.</p>
+
+        <form>
+
+          <div class="form-group" id="genre">
+          <label>What genre would you like to listen to?</label>
+            <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="radio" name="genre" value="pop"> Pop</label></div>
+
+            <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="radio" name="genre" value= "rock"> Rock</label></div>
+
+            <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="radio" name="genre" value="hip-hop" id="hiphop"> Hip-hop/R&B</label></div>
+
+          </div>
+
+          <div class="form-group" id="rhythm">
+          <label>Would you like a slow, medium or fast tempo?</label>
+            <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="radio" name="rhythm" value="slow"> Slow</label></div>
+
+            <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="radio" name="rhythm" value= "medium" id="medium"> Medium</label></div>
+
+            <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="radio" name="rhythm" value="fast"> Fast</label></div>
+
+          </div>
+
+          <div class="form-group" id="vocals">
+          <label>Would you like male or female vocals?</label>
+            <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="radio" name="vocals" value="male" id="male"> Male</label></div>
+
+            <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="radio" name="vocals" value= "female"> Female</label></div><br>
+
+          </div>
+
+          <div class="form-group">
+            <input class="btn btn-primary" type="submit" value="Submit Answers" id="submit"> <input class="btn btn-danger" type="reset" value="Start Over"></div>
+
+          <div id="makeitbetter"><iframe width="420" height="315"
+          src="https://www.youtube.com/embed/7Jj83FOlBF8">
+        </iframe></div>
+
+        </form>
+    </div>
+    </div>
+</div>
+
+<script src="js/scripts.js"></script>
+
+</body></html>
