@@ -190,9 +190,22 @@ function showSong () {
 button.onclick = () => {
   showSong();
 }
+//
+// var stopAllYouTubeVideos = () => {
+//   var iframes = document.querySelectorAll('iframe');
+//   Array.prototype.forEach.call(iframes, iframe => {
+//     iframe.contentWindow.postMessage(JSON.stringify({ event: 'command',
+//   func: 'stopVideo' }), '*');
+//  });
+// }
 
-$('#modal').on('hidden', function () {
-  $('.close').click(function(){
-       $('iframe').attr('src', $('iframe').attr('src'));
-   });
+function pauseAllVideos() {
+    $('.close').click(function(){
+         $('iframe').attr('src', $('iframe').attr('src'));
+     });
 }
+
+$('#modal').on('hidden.bs.modal', function () {
+    pauseAllVideos();
+});
+  //
