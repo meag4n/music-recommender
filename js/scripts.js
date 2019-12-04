@@ -1,22 +1,25 @@
 const modal = document.querySelector('#modal')
-
 const button = document.querySelector('#btn')
-
 const close = document.querySelector('#close')
-
-
-const fieldset = document.querySelector('fieldset')
+const submit = document.getElementById('submit');
 
 const makeitbetter = document.querySelector('#makeitbetter');
 const up = document.querySelector('#up');
 const lingerie = document.querySelector('#lingerie');
 const someone = document.querySelector('#someone');
 const froot = document.querySelector('#froot');
-
+const perm = document.querySelector('#perm');
+const girls = document.querySelector('#girls');
+const four = document.querySelector('#four');
+const woman = document.querySelector('#woman');
+const baddest = document.querySelector('#baddest');
+const west = document.querySelector('#west');
+const nightmare = document.querySelector('#nightmare');
 const devil = document.querySelector('#devil');
-devil.style.display = 'none';
-
-const submit = document.getElementById('submit');
+const twoweeks = document.querySelector('#twoweeks');
+const sayso = document.querySelector('#sayso');
+const bonfire = document.querySelector('#bonfire');
+const realer = document.querySelector('#realer');
 
 const pop = document.getElementById('pop');
 const rock = document.getElementById('rock');
@@ -53,6 +56,19 @@ function hideAllSongs() {
   lingerie.style.display = 'none';
   someone.style.display = 'none';
   froot.style.display = 'none';
+  perm.style.display = 'none';
+  girls.style.display = 'none';
+  four.style.display = 'none';
+  woman.style.display = 'none';
+  baddest.style.display = 'none';
+  grudges.style.display = 'none';
+  west.style.display = 'none';
+  nightmare.style.display = 'none';
+  devil.style.display = 'none';
+  twoweeks.style.display = 'none';
+  sayso.style.display = 'none';
+  bonfire.style.display = 'none';
+  realer.style.display = 'none';
 }
 
 function showSong () {
@@ -65,13 +81,13 @@ function showSong () {
     else if (pop.checked === true && slow.checked === true && male.checked === true) {
       hideAllSongs();
       message = m2;
-      document.querySelector("#textresult").textContent = message;
+      document.querySelector(".textresult").textContent = message;
       up.style.display = 'block';
     }
     else if (pop.checked === true && slow.checked === true && female.checked === true) {
       hideAllSongs();
       message = m3;
-      document.querySelector("#textresult").textContent = message;
+      document.querySelector(".textresult").textContent = message;
       lingerie.style.display = 'block';
     }
     else if (pop.checked === true && medium.checked === true && male.checked === true) {
@@ -87,56 +103,81 @@ function showSong () {
       froot.style.display = 'block';
     }
     else if (pop.checked === true && fast.checked === true && male.checked === true) {
+      hideAllSongs();
       message = m6;
+      document.querySelector(".textresult").textContent = message;
       perm.style.display = 'block';
     }
     else if (pop.checked === true && fast.checked === true && female.checked === true) {
+      hideAllSongs();
       message = m7;
+      document.querySelector(".textresult").textContent = message;
       girls.style.display = 'block';
     }
     else if (rock.checked === true && slow.checked === true && male.checked === true) {
+      hideAllSongs();
       message = m8;
+      document.querySelector(".textresult").textContent = message;
       four.style.display = 'block';
     }
     else if (rock.checked === true && slow.checked === true && female.checked === true) {
+      hideAllSongs();
       message = m9;
+      document.querySelector(".textresult").textContent = message;
       woman.style.display = 'block';
     }
     else if (rock.checked === true && medium.checked === true && male.checked === true) {
+      hideAllSongs();
       message = m10;
+      document.querySelector(".textresult").textContent = message;
       baddest.style.display = 'block';
     }
     else if (rock.checked === true && medium.checked === true && female.checked === true) {
+      hideAllSongs();
       message = m11;
+      document.querySelector(".textresult").textContent = message;
       grudges.style.display = 'block';
     }
     else if (rock.checked === true && fast.checked === true && male.checked === true) {
+      hideAllSongs();
       message = m12;
+      document.querySelector(".textresult").textContent = message;
       west.style.display = 'block';
     }
     else if (rock.checked === true && fast.checked === true && female.checked === true) {
+      hideAllSongs();
       message = m13;
+      document.querySelector(".textresult").textContent = message;
       nightmare.style.display = 'block';
     }
     else if (hiphop.checked === true && slow.checked === true && male.checked === true) {
+      hideAllSongs();
       message = m14;
+      document.querySelector(".textresult").textContent = message;
       devil.style.display = 'block';
     }
     else if (hiphop.checked === true && slow.checked === true && female.checked === true) {
+      hideAllSongs();
       message = m15;
+      document.querySelector(".textresult").textContent = message;
       twoweeks.style.display = 'block';
     }
     else if (hiphop.checked === true && medium.checked === true && female.checked === true) {
+      hideAllSongs();
       message = m16;
+      document.querySelector(".textresult").textContent = message;
       sayso.style.display = 'block';
     }
     else if (hiphop.checked === true && fast.checked === true && male.checked === true) {
-      document.querySelector("#textresult").textContent = message;
+      hideAllSongs();
       message = m17;
+      document.querySelector(".textresult").textContent = message;
       bonfire.style.display = 'block';
     }
     else if (hiphop.checked === true && fast.checked === true && female.checked === true) {
+      hideAllSongs();
       message = m18;
+      document.querySelector(".textresult").textContent = message;
       realer.style.display = 'block';
     }
     else {
@@ -145,7 +186,7 @@ function showSong () {
 }
 
 close.onclick = () => {
-  player.pauseVideo();
+  player.stopVideo();
 }
 
 button.onclick = () => {

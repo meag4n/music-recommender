@@ -9,11 +9,17 @@
 </head>
 <body>
 
-  <div class="container">
+  <div class="container" id="quiz">
       <div class="row">
       <div class="col-md-8">
-        <h1 class="pt-3 pb-2">Music Recommender</h1>
-        <p>Can't find a new song to fit your mood? This quiz will recommend you a different song for each music option you pick.</p>
+        <div class="jumbotron">
+  <h1 class="display-4">Music recommeder</h1>
+  <p class="lead">Can't find a new song to fit your mood? This quiz will recommend you a different song for each music option you pick.</p>
+  <hr class="my-4">
+  <p>There are 18 possible song results, with one song for each unique path of choices.</p>
+</div>
+        <!-- <h1 class="pt-3 pb-2">Music Recommender</h1>
+        <p>Can't find a new song to fit your mood? This quiz will recommend you a different song for each music option you pick.</p> -->
 
 
         <fieldset id="fieldset">
@@ -61,11 +67,7 @@
             </div>
           </div>
         </fieldset>
-
-          <div class="form-group">
-            <div class="btn btn-primary" id="submit">Submit Answers</div> <input class="btn btn-danger" type="reset" value="Start Over">
-          </div><br>
-
+        <br>
           <!-- Button trigger modal -->
         <button type="button" id="btn" class="btn btn-primary" data-toggle="modal" data-target="#modal">
           Submit Answers
@@ -76,14 +78,14 @@
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                <h5 class="modal-title" id="exampleModalCenterTitle">Your result</h5>
                 <button type="button" id="close" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
               <div class="modal-body">
                 <div class="textresult"><p></p><br></div>
-
+                <br>
                 <div id="makeitbetter"><iframe width="420" height="315"
                 src="https://www.youtube.com/embed/7Jj83FOlBF8">
               </iframe></div>
@@ -112,85 +114,58 @@
                 src="https://www.youtube.com/embed/Ufzwh1-YSNI">
                 </iframe></div>
 
-                <div id="devil"><iframe width="420" height="315"
-                src="https://www.youtube.com/embed/sk3rpYkiHe8">
+                <div id="four"><iframe width="420" height="315"
+                src="https://www.youtube.com/embed/zKJrrMIsghI">
+                </iframe></div>
+
+                <div id="woman"><iframe width="420" height="315"
+                src="https://www.youtube.com/embed/W4yhzATxyz0">
+                </iframe></div>
+
+                <div id="baddest"><iframe width="420" height="315"
+                src="https://www.youtube.com/embed/bWo-dZoG4H0">
+                </iframe></div>
+
+                <div id="grudges"><iframe width="420" height="315"
+                src="https://www.youtube.com/embed/fIx6Xg0n9L4">
+                </iframe></div>
+
+                <div id="west"><iframe width="420" height="315"
+                src="https://www.youtube.com/embed/6EoU0TvdqLw">
+                </iframe></div>
+
+                <div id="nightmare"><iframe width="420" height="315"
+                src="https://www.youtube.com/embed/JXjQOHlc_aU">
                 </iframe></div>
 
                 <div id="devil"><iframe width="420" height="315"
                 src="https://www.youtube.com/embed/sk3rpYkiHe8">
                 </iframe></div>
 
-                <div id="devil"><iframe width="420" height="315"
-                src="https://www.youtube.com/embed/sk3rpYkiHe8">
+                <div id="twoweeks"><iframe width="420" height="315"
+                src="https://www.youtube.com/embed/3yDP9MKVhZc">
                 </iframe></div>
 
-                <div id="devil"><iframe width="420" height="315"
-                src="https://www.youtube.com/embed/sk3rpYkiHe8">
+                <div id="sayso"><iframe width="420" height="315"
+                src="https://www.youtube.com/embed/uAYG46w1SCA">
                 </iframe></div>
 
-                <div id="devil"><iframe width="420" height="315"
-                src="https://www.youtube.com/embed/sk3rpYkiHe8">
+                <div id="bonfire"><iframe width="420" height="315"
+                src="https://www.youtube.com/embed/qL1B_r9nC9k">
                 </iframe></div>
 
-                <div id="devil"><iframe width="420" height="315"
-                src="https://www.youtube.com/embed/sk3rpYkiHe8">
+                <div id="realer"><iframe width="420" height="315"
+                src="https://www.youtube.com/embed/lDWeob50YY8">
                 </iframe></div>
-
 
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button> -->
               </div>
             </div>
           </div>
         </div>
-
-<!-- <div class="modal">
-  <div class="modal-dialog" id="modal" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      <div id="textresult"><p></p><br></div>
-
-      <div id="makeitbetter"><iframe width="420" height="315"
-      src="https://www.youtube.com/embed/7Jj83FOlBF8">
-    </iframe></div>
-
-      <div id="up"><iframe width="420" height="315"
-      src="https://www.youtube.com/embed/-aOy9P_OAeM">
-      </iframe></div>
-
-      <div id="lingerie"><iframe width="420" height="315"
-      src="https://www.youtube.com/embed/uOLdd340HiQ">
-      </iframe></div>
-
-      <div id="someone"><iframe width="420" height="315"
-      src="https://www.youtube.com/embed/bPJSsAr2iu0">
-      </iframe></div>
-
-      <div id="froot"><iframe width="420" height="315"
-      src="https://www.youtube.com/embed/BI_0HIz_4JY">
-      </iframe></div>
-
-      <div id="devil"><iframe width="420" height="315"
-      src="https://www.youtube.com/embed/sk3rpYkiHe8">
-      </iframe></div>
-    </div>
-
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Save changes</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div> -->
-
     </div>
     </div>
 </div>

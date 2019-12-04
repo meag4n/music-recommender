@@ -1,7 +1,11 @@
-fieldset {
-    margin: auto;
-}
-.question {
+.textresult {
     font-weight: bold;
+    font-size: 18pt;
 }
-/* div: transparent 100% opactity use rgba*/
+#modal {
+    text-align: center;
+}
+.jumbotron {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
