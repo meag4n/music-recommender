@@ -1,6 +1,7 @@
-.container {
-    margin: 80px;
+fieldset {
+    margin: auto;
 }
 .question {
     font-weight: bold;
 }
+/* div: transparent 100% opactity use rgba*/
