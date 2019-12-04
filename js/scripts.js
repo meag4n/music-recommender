@@ -2,6 +2,9 @@ const modal = document.querySelector('#modal')
 
 const button = document.querySelector('#btn')
 
+const close = document.querySelector('#close')
+
+
 const fieldset = document.querySelector('fieldset')
 
 const makeitbetter = document.querySelector('#makeitbetter');
@@ -141,9 +144,13 @@ function showSong () {
     }
 }
 
+close.onclick = () => {
+  player.pauseVideo();
+}
+
 button.onclick = () => {
   showSong();
-  document.getElementById("vocals").reset();
 }
+
 
 hideAllSongs();
