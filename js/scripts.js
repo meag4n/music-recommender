@@ -183,7 +183,9 @@ function showSong () {
       realer.style.display = 'block';
     }
     else {
+      hideAllSongs();
       message = m19;
+      document.querySelector(".textresult").textContent = message;
     }
 }
 
