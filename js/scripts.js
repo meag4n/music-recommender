@@ -186,8 +186,11 @@ function showSong () {
 }
 
 close.onclick = () => {
-  player.stopVideo();
-}
+  $('iframe').contents().find('video').each(function ()
+         {
+             this.currentTime = 0;
+             this.pause();
+         });}
 
 button.onclick = () => {
   showSong();
