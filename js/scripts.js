@@ -71,6 +71,8 @@ function hideAllSongs() {
   realer.style.display = 'none';
 }
 
+hideAllSongs();
+
 function showSong () {
     if (hiphop.checked === true && medium.checked === true && male.checked === true) {
       hideAllSongs();
@@ -194,6 +196,3 @@ $('#modal').on('hidden', function () {
        $('iframe').attr('src', $('iframe').attr('src'));
    });
 }
-
-
-hideAllSongs();
