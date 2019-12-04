@@ -185,15 +185,14 @@ function showSong () {
     }
 }
 
-close.onclick = () => {
-  $('iframe').contents().find('video').each(function ()
-         {
-             this.currentTime = 0;
-             this.pause();
-         });}
-
 button.onclick = () => {
   showSong();
+}
+
+$('#modal').on('hidden', function () {
+  $('.close').click(function(){
+       $('iframe').attr('src', $('iframe').attr('src'));
+   });
 }
 
 
