@@ -192,6 +192,12 @@ function showSong () {
 button.onclick = () => {
   showSong();
 }
+
+$('#close').click(function(){
+  $('.videos').each(function(){
+    $(this).stopVideo();
+  });
+});
 //
 // var stopAllYouTubeVideos = () => {
 //   var iframes = document.querySelectorAll('iframe');
@@ -201,13 +207,18 @@ button.onclick = () => {
 //  });
 // }
 
-function pauseAllVideos() {
-    $('.close').click(function(){
-         $('iframe').attr('src', $('iframe').attr('src'));
-     });
-}
+// function pauseAllVideos() {
+//     $('.close').click(function(){
+//          $('iframe').attr('src', $('iframe').attr('src'));
+//      });
+// }
 
-$('#modal').on('hidden.bs.modal', function () {
-    pauseAllVideos();
-});
-  //
+// $('a.stop-video').click(function(){
+// 	$('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+// });
+//
+//
+// $('#modal').on('hidden.bs.modal', function () {
+//     stopVideo();
+// });
+//   //
