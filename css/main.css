@@ -9,3 +9,15 @@
     padding-top: 30px;
     padding-bottom: 30px;
 }
+.videos {
+    overflow:hidden;
+    padding-bottom: 57%;
+    position:relative;
+}
+.videos iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
